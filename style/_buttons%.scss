@@ -1,0 +1,99 @@
+.btn-percentage {
+    border: none;
+    border-radius: 4px;
+
+    width: 4.8rem;
+    height: 2rem;
+
+    color: $white;
+    font-size: 1.2rem;
+
+    cursor: pointer;
+    background-color: $blue;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+
+}
+
+.btn-1 {
+    grid-area: btn-1;
+    appearance: none;
+    text-align: center;
+
+    &:checked {
+        background-color: #00134B;
+    }
+
+    &::before {
+        content: '5%';
+    }
+}
+
+.btn-2 {
+    grid-area: btn-2;
+    appearance: none;
+    text-align: center;
+
+    &:checked {
+        background-color: #00134B;
+    }
+
+    &::before {
+        content: '10%';
+    }
+}
+
+.btn-3 {
+    grid-area: btn-3;
+    appearance: none;
+    text-align: center;
+
+    &:checked {
+        background-color: #00134B;
+    }
+
+    &::before {
+        content: '15%';
+    }
+}
+
+.btn-4 {
+    grid-area: btn-4;
+    appearance: none;
+    text-align: center;
+
+    &:checked {
+        background-color: #00134B;
+    }
+
+    &::before {
+        content: '20%';
+    }
+}
+
+.btn-5 {
+    grid-area: btn-5;
+    appearance: none;
+    text-align: center;
+
+    &:checked {
+        background-color: #00134B;
+    }
+
+    &::before {
+        content: '25%';
+    }
+}
+
+.btn-6 {
+    grid-area: btn-6;
+    appearance: none;
+    text-align: center;
+
+    &:checked {
+        background-color: #00134B;
+    }
+
+    &::before {
+        content: '50%';
+    }
+}
