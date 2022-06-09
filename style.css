@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+:root {
+    /* PALETA DE CORES */
+    --darker-blue: #00134B;
+    --dark-blue: #002287;
+    --blue: #4563BF;
+    --light-blue: #D5EAF2;
+    --white: #FFF;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    /* border: solid 1px red; */
+
+    user-select: none;
+}
+
+input[type="number"] {
+    border: solid 1px #B6B6B6;
+    padding: .4rem;
+    border-radius: 4px;
+    text-align: right;
+}
+
+input[type="number"]:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+input[type="number"]::placeholder {
+    text-align: left;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+
+    background-color: var(--light-blue);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+
+    width: clamp(15rem, 50%, 30rem);
+    height: clamp(28rem, 50%, 30rem);
+
+    background-color: var(--white);
+    border-radius: 10px;
+    box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.02);
+
+    padding: 1rem;
+}
+
+h1 {
+    color: var(--darker-blue);
+    width: 100%;
+    text-align: center;
+}
+
+/* USER INPUT */
+
+.box-1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    width: 100%;
+    height: 7.813rem;
+}
+
+.user-input {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+input[name="numero-pessoas"], input[name="conta"] {
+    width: 85%;
+}
+
+input[name="numero-pessoas"]::placeholder, input[name="conta"]::placeholder{
+    text-align: left;
+    
+}
+
+label {
+    color: var(--darker-blue);
+}
+
+/* ------------------------------------------------ */
+
+/* DISPLAY */
+
+.display {
+    display: flex;
+    flex-direction: column;
+
+    color: var(--white);
+    background-color: var(--blue);
+
+    width: 11.5rem;
+    height: 7.813rem;
+    padding: .8rem;
+
+    border-radius: 4px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.display > .display-label {
+    font-size: .8rem;
+    color: var(--light-blue);
+}
+
+.display > .display-price {
+    font-size: 1.4rem;
+}
+
+/* ------------------------------------------------ */
+
+/* BOTÕES % */
+
+.box-2 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.grid-box-2 {
+    display: grid;
+    grid-template-columns: 4.8rem 4.8rem 4.8rem 4.8rem;
+    grid-template-rows: 2rem 2rem;
+    grid-template-areas: 
+        "btn-1 btn-2 btn-3 btn-4"
+        "btn-5 btn-6 input input"
+    ;
+    row-gap: .8rem;
+    column-gap: 1.7rem;
+    /* border: solid 1px red; */
+}
+
+.btn-1 {
+    grid-area: btn-1;
+    appearance: none;
+    text-align: center;
+}
+
+.btn-1:checked {
+    background-color: #00134B;
+}
+
+.btn-1::before {
+    content: '5%';
+}
+
+.btn-2 {
+    grid-area: btn-2;
+    appearance: none;
+    text-align: center;
+}
+
+.btn-2:checked {
+    background-color: #00134B;
+}
+
+.btn-2::before {
+    content: '10%';
+}
+
+.btn-3 {
+    grid-area: btn-3;
+    appearance: none;
+    text-align: center;
+}
+
+.btn-3:checked {
+    background-color: #00134B;
+}
+
+.btn-3::before {
+    content: '15%';
+}
+
+.btn-4 {
+    grid-area: btn-4;
+    appearance: none;
+    text-align: center;
+}
+
+.btn-4:checked {
+    background-color: #00134B;
+}
+
+.btn-4::before {
+    content: '20%';
+}
+
+.btn-5 {
+    grid-area: btn-5;
+    appearance: none;
+    text-align: center;
+}
+
+.btn-5:checked {
+    background-color: #00134B;
+}
+
+.btn-5::before {
+    content: '25%';
+}
+
+.btn-6 {
+    grid-area: btn-6;
+    appearance: none;
+    text-align: center;
+}
+
+.btn-6:checked {
+    background-color: #00134B;
+}
+
+.btn-6::before {
+    content: '50%';
+}
+
+.input-percentage {
+    grid-area: input;
+    width: 11.3rem;
+    height: 2rem;
+}
+
+.btn-percentage {
+    border: none;
+    border-radius: 4px;
+
+    width: 4.8rem;
+    height: 2rem;
+
+    color: var(--white);
+    font-size: 1.2rem;
+
+    cursor: pointer;
+    background-color: #4563BF;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+
+}
+
+/* ------------------------------------------------ */
+
+/* BOTÕES CONFIRMAR/RESETAR */
+
+.box-3 {
+    display: flex;
+    gap: 1rem;
+}
+
+.btn-submit {
+    border: none;
+    border-radius: 4px;
+    width: 11rem;
+    height: 2.8rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+
+}
+
+.btn-calcular {
+    color: var(--white);
+    background-color: var(--dark-blue);
+}
+
+.btn-resetar {
+    color: var(--darker-blue);
+    background-color: var(--light-blue);
+}
+
+/* ------------------------------------------------ */

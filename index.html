@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Gorjeta</title>
+    <link rel="shortcut icon" href="images/favicon.png" type="images/png">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <main class="container">
+        <h1>CALCULADORA DE GORJETA</h1>
+        <div class="box-1">
+            <div class="user-input">
+                    <label for="conta">Valor da Conta</label>
+                    <input type="number" name="conta" id="input-conta" class="input-real">
+                <label for="numero-pessoas">Número de Pessoas</label>
+                <input type="number" name="numero-pessoas" id="input-numero-pessoas">
+            </div>
+            <div class="display">
+                <span class="display-label">Total por pessoa</span>
+                <span class="display-price" id="text-total">R$ 0.00</span>
+                <span class="display-label">Gorjeta</span>
+                <span class="display-price" id="text-gorjeta">R$ 0.00</span>
+            </div>
+        </div>
+        <div class="box-2">
+            <div class="grid-box-2">
+                    <input type="checkbox" name="btn-5" id="btn-5" class="btn-percentage btn-1" value="5" onclick="verificarBtnClicados(this)">
+                    <input type="checkbox" name="btn-10" id="btn-10" class="btn-percentage btn-2" value="10" onclick="verificarBtnClicados(this)">
+                    <input type="checkbox" name="btn-15" id="btn-15" class="btn-percentage btn-3" value="15" onclick="verificarBtnClicados(this)">
+                    <input type="checkbox" name="btn-20" id="btn-20" class="btn-percentage btn-4" value="20" onclick="verificarBtnClicados(this)">
+                    <input type="checkbox" name="btn-25" id="btn-25" class="btn-percentage btn-5" value="25" onclick="verificarBtnClicados(this)">
+                    <input type="checkbox" name="btn-50" id="btn-50" class="btn-percentage btn-6" value="50" onclick="verificarBtnClicados(this)">
+                    <input type="number" class="input-percentage" id="input-porcentagem" placeholder="Digite a % desejada">
+            </div>
+        </div>
+        <div class="box-3">
+            <button class="btn-submit btn-calcular" id="btn-calcular">CALCULAR</button>
+            <button class="btn-submit btn-resetar" id="btn-resetar">RESETAR</button>
+        </div>
+    </main>
+</body>
+</html>
