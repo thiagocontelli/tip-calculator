@@ -33,7 +33,7 @@ btnResetar.addEventListener('click', () => {
     inputConta.value = ''
     inputNumeroPessoas.value = ''
     inputPorcentagem.value = ''
-    inputPorcentagem.disabled = false
+    inputPorcentagem.disabled = btn5.disabled = btn10.disabled = btn15.disabled = btn20.disabled = btn25.disabled = btn50.disabled = false
     btn5.checked = btn10.checked = btn15.checked = btn20.checked = btn25.checked = btn50.checked = false
 })
 
