@@ -23,8 +23,8 @@ body {
     @include flexbox(column, center, center);
     gap: 2rem;
 
-    width: clamp(15rem, 50%, 30rem);
-    height: clamp(28rem, 50%, 30rem);
+    min-width: 30rem;
+    height: 28rem;
 
     background-color: $white;
     border-radius: 10px;
@@ -105,7 +105,7 @@ input[type="number"] {
 /* % */
 
 .box-2 {
-    @include flexbox(row, center, none);
+    @include flexbox(column, center, center);
     width: 100%;
 
     .grid-box-2 {
@@ -118,12 +118,12 @@ input[type="number"] {
         ;
         row-gap: .8rem;
         column-gap: 1.7rem;
-    }
 
-    .input-percentage {
-        grid-area: input;
-        width: 11.3rem;
-        height: 2rem;
+        .input-percentage {
+            grid-area: input;
+            width: 11.3rem;
+            height: 2rem;
+        }
     }
 }
 
@@ -156,3 +156,4 @@ input[type="number"] {
     }
 }
 
+/* ------------------------------------------------ */
