@@ -1,0 +1,388 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap");
+.btn-percentage {
+  border: none;
+  border-radius: 4px;
+  width: 4.8rem;
+  height: 2rem;
+  color: #FFF;
+  font-size: 1.2rem;
+  cursor: pointer;
+  background-color: #4563BF;
+  -webkit-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.btn-1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: btn-1;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  text-align: center;
+}
+
+.btn-1:checked {
+  background-color: #00134B;
+}
+
+.btn-1::before {
+  content: '5%';
+}
+
+.btn-2 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: btn-2;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  text-align: center;
+}
+
+.btn-2:checked {
+  background-color: #00134B;
+}
+
+.btn-2::before {
+  content: '10%';
+}
+
+.btn-3 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: btn-3;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  text-align: center;
+}
+
+.btn-3:checked {
+  background-color: #00134B;
+}
+
+.btn-3::before {
+  content: '15%';
+}
+
+.btn-4 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 4;
+  grid-area: btn-4;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  text-align: center;
+}
+
+.btn-4:checked {
+  background-color: #00134B;
+}
+
+.btn-4::before {
+  content: '20%';
+}
+
+.btn-5 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: btn-5;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  text-align: center;
+}
+
+.btn-5:checked {
+  background-color: #00134B;
+}
+
+.btn-5::before {
+  content: '25%';
+}
+
+.btn-6 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: btn-6;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  text-align: center;
+}
+
+.btn-6:checked {
+  background-color: #00134B;
+}
+
+.btn-6::before {
+  content: '50%';
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Kdam Thmor Pro", sans-serif;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: #D5EAF2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 2rem;
+  width: clamp(15rem, 50%, 30rem);
+  height: clamp(28rem, 50%, 30rem);
+  background-color: #FFF;
+  border-radius: 10px;
+  -webkit-box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.02);
+          box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.02);
+  padding: 1rem;
+}
+
+.container h1 {
+  color: #00134B;
+  font-size: 2rem;
+  width: 100%;
+  text-align: center;
+}
+
+input[type="number"] {
+  border: solid 1px #B6B6B6;
+  padding: .4rem;
+  border-radius: 4px;
+  text-align: right;
+}
+
+input[type="number"]:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  outline: none;
+}
+
+input[type="number"]::-webkit-input-placeholder {
+  text-align: left;
+}
+
+input[type="number"]:-ms-input-placeholder {
+  text-align: left;
+}
+
+input[type="number"]::-ms-input-placeholder {
+  text-align: left;
+}
+
+input[type="number"]::placeholder {
+  text-align: left;
+}
+
+/* USER INPUT */
+.box-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: none;
+      -ms-flex-align: none;
+          align-items: none;
+  width: 100%;
+  height: 7.813rem;
+}
+
+.box-1 .user-input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: none;
+      -ms-flex-align: none;
+          align-items: none;
+}
+
+.box-1 input[name="numero-pessoas"], .box-1 input[name="conta"] {
+  width: 85%;
+}
+
+.box-1 input[name="numero-pessoas"]::-webkit-input-placeholder, .box-1 input[name="conta"]::-webkit-input-placeholder {
+  text-align: left;
+}
+
+.box-1 input[name="numero-pessoas"]:-ms-input-placeholder, .box-1 input[name="conta"]:-ms-input-placeholder {
+  text-align: left;
+}
+
+.box-1 input[name="numero-pessoas"]::-ms-input-placeholder, .box-1 input[name="conta"]::-ms-input-placeholder {
+  text-align: left;
+}
+
+.box-1 input[name="numero-pessoas"]::placeholder, .box-1 input[name="conta"]::placeholder {
+  text-align: left;
+}
+
+.box-1 label {
+  color: var(--darker-blue);
+}
+
+.box-1 .display {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: none;
+      -ms-flex-pack: none;
+          justify-content: none;
+  -webkit-box-align: none;
+      -ms-flex-align: none;
+          align-items: none;
+  color: #FFF;
+  background-color: #4563BF;
+  width: 11.5rem;
+  height: 7.813rem;
+  padding: .8rem;
+  border-radius: 4px;
+  -webkit-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.box-1 .display .display-label {
+  font-size: .8rem;
+  color: #D5EAF2;
+}
+
+.box-1 .display .display-price {
+  font-size: 1.4rem;
+}
+
+/* ------------------------------------------------ */
+/* % */
+.box-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: none;
+      -ms-flex-align: none;
+          align-items: none;
+  width: 100%;
+}
+
+.box-2 .grid-box-2 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 4.8rem 4.8rem 4.8rem 4.8rem;
+      grid-template-columns: 4.8rem 4.8rem 4.8rem 4.8rem;
+  -ms-grid-rows: 2rem 2rem;
+      grid-template-rows: 2rem 2rem;
+      grid-template-areas: "btn-1 btn-2 btn-3 btn-4"
+ "btn-5 btn-6 input input";
+  row-gap: .8rem;
+  -webkit-column-gap: 1.7rem;
+          column-gap: 1.7rem;
+}
+
+.box-2 .input-percentage {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 2;
+  grid-area: input;
+  width: 11.3rem;
+  height: 2rem;
+}
+
+/* ------------------------------------------------ */
+/* BOTÕES CONFIRMAR/RESETAR */
+.box-3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: none;
+      -ms-flex-pack: none;
+          justify-content: none;
+  -webkit-box-align: none;
+      -ms-flex-align: none;
+          align-items: none;
+  gap: 1rem;
+}
+
+.box-3 .btn-submit {
+  border: none;
+  border-radius: 4px;
+  width: 11rem;
+  height: 2.8rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  -webkit-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.box-3 .btn-calcular {
+  color: #FFF;
+  background-color: #002287;
+}
+
+.box-3 .btn-resetar {
+  color: #00134B;
+  background-color: #D5EAF2;
+}
+/*# sourceMappingURL=style.css.map */
