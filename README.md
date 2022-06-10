@@ -21,9 +21,3 @@ Eu decidi desenvolvedor esse projeto, principalmente, para aprimorar minhas habi
 Pude também aprimorar minhas habilidades em HTML e CSS (usando também uma linguagem de extensão do CSS: o SASS).
 
 ---
-
-## Próximos passos
-
-A próxima etapa desse projeto é fazer com que o design seja responsivo e mais fluído com algumas animações.
-
----
